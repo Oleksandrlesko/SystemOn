@@ -1,0 +1,181 @@
+/*
+    SystemOn — Strict Gray Edition
+    Minimal • Neutral • Professional
+*/
+
+/* Base */
+* {
+    font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+    font-size: 13px;
+    color: #d1d5db;
+}
+
+/* Windows / dialogs */
+QMainWindow, QDialog, QWidget {
+    background-color: #1e1e1e;
+}
+
+/* Menu bar */
+QMenuBar {
+    background-color: #2a2a2a;
+    color: #d1d5db;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+QMenuBar::item {
+    padding: 6px 12px;
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: #3a3a3a;
+}
+
+/* Menus */
+QMenu {
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+}
+
+QMenu::item:selected {
+    background-color: #404040;
+}
+
+/* Status bar */
+QStatusBar {
+    background-color: #252525;
+    color: #9ca3af;
+}
+
+/* Buttons */
+QPushButton, QDialog QPushButton {
+    background-color: #2d2d2d;
+    border: 1px solid #3f3f3f;
+    padding: 6px 12px;
+    color: #e5e7eb;
+}
+
+QPushButton:hover {
+    background-color: #3a3a3a;
+}
+
+QPushButton:pressed {
+    background-color: #1f1f1f;
+}
+
+/* Line edit */
+QLineEdit, QDialog QLineEdit {
+    background-color: #1c1c1c;
+    border: 1px solid #3f3f3f;
+    padding: 6px 8px;
+    color: #e5e7eb;
+}
+
+QLineEdit:focus {
+    border-color: #6b7280;
+}
+
+/* Combo box (popup list contrast for “Update speed” and other fields) */
+QComboBox {
+    background-color: #2d2d2d;
+    border: 1px solid #3f3f3f;
+    padding: 6px 10px;
+    color: #e5e7eb;
+    border-radius: 8px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #2a2a2a;
+    color: #e5e7eb;
+    selection-background-color: #6366f1;
+    selection-color: #ffffff;
+    border: 1px solid #3f3f3f;
+    outline: 0;
+    padding: 4px;
+}
+
+/* Tables */
+QTableWidget {
+    background-color: #1c1c1c;
+    gridline-color: #333333;
+    selection-background-color: #3a3a3a;
+    selection-color: #f9fafb;
+    alternate-background-color: #1f1f1f;
+}
+
+/* Table headers */
+QHeaderView::section {
+    background-color: #2a2a2a;
+    color: #d1d5db;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #3a3a3a;
+}
+
+QHeaderView::section:last {
+    border-right: none;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #3a3a3a;
+}
+
+QTabBar::tab {
+    background-color: #2a2a2a;
+    padding: 6px 12px;
+    border: 1px solid #3a3a3a;
+    border-bottom: none;
+    min-width: 100px;
+}
+
+QTabBar::tab:selected {
+    background-color: #1e1e1e;
+    color: #f9fafb;
+}
+
+QTabBar::tab:hover {
+    background-color: #333333;
+}
+
+/* Scrollbars */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background-color: #1e1e1e;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background-color: #3a3a3a;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:hover {
+    background-color: #4a4a4a;
+}
+
+/* Progress bar */
+QProgressBar {
+    background-color: #1c1c1c;
+    border: 1px solid #3a3a3a;
+    text-align: center;
+    color: #9ca3af;
+}
+
+QProgressBar::chunk {
+    background-color: #6b7280;
+}
+
+/* Labels */
+QLabel {
+    color: #d1d5db;
+}
+
+/* Graphs */
+RGraph {
+    background-color: #1c1c1c;
+    color: #9ca3af;
+}
